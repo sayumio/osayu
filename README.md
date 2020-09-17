@@ -21,9 +21,11 @@ Things you may want to cover:
 | -------- | ------ | ----------- |
 | nickname | string | null: false |
 | email    | string | null: false unique: true|
-| password | string | null: false unique: true|
-| name     | string | null: false |
-| kananame | string | null: false |
+| password | string | null: false |
+| sei      | string | null: false |
+| mei      | string | null: false |
+| kanasei  | string | null: false |
+| kanamei  | string | null: false |
 | birthday |  date  | null: false |
 
 ## goods テーブル
