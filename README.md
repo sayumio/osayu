@@ -50,7 +50,7 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :users
-- has_many :purchases
+- has_one :purchases
 
 ## purchase テーブル
 
