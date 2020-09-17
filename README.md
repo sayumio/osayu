@@ -63,10 +63,19 @@ Things you may want to cover:
 | building     | string  |             |
 | phonenum     | string  | null: false |
 
-## user_id テーブル
 
-## item_id テーブル
+## managements テーブル
 
+| Column   | Type       | Options     |
+| -------  | ---------- | ----------- |
+| users_id | integer    | null: false unique: true|
+| item_id  | integer    | null: false unique: true|
+
+### Association
+
+- has_one :users
+- has_one :purchases
+- has_one :items
 
 
 * Database initialization
