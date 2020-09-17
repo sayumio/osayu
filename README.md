@@ -57,8 +57,8 @@ Things you may want to cover:
 | Column       | Type       | Options                        |
 | -------      | ---------- | ------------------------------ |
 | postalcode   | string | null: false unique: true|
-| address      | string | null: false unique: true|
-| address      | string | null: false unique: true|
+| prefectures  | string | null: false unique: true|
+| municipality | string | null: false unique: true|
 | addressnum   | string | null: false unique: true|
 | building     | string | null: false unique: true|
 | phonenum     | string | null: false unique: true|
