@@ -28,6 +28,11 @@ Things you may want to cover:
 | kanamei  | string | null: false |
 | birthday |  date  | null: false |
 
+### Association
+
+- has_many :goods
+- has_many :purchase
+
 ## goods テーブル
 
 | Column  | Type       | Options     |
@@ -42,7 +47,12 @@ Things you may want to cover:
 | price   | string     | null: false |
 | content | text       |             |
 
-## Purchase テーブル
+### Association
+
+- has_many :users
+- has_many :purchase
+
+## purchase テーブル
 
 | Column       | Type       | Options                        |
 | -------      | ---------- | ------------------------------ |
@@ -53,7 +63,10 @@ Things you may want to cover:
 | building     | string |             |
 | phonenum     | string | null: false |
 
+### Association
 
+- has_many :users
+- has_many :goods
 
 * Database initialization
 
