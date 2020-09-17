@@ -56,12 +56,12 @@ Things you may want to cover:
 
 | Column       | Type       | Options                        |
 | -------      | ---------- | ------------------------------ |
-| postalcode   | string | null: false |
-| prefectures  | string | null: false |
-| municipality | string | null: false |
-| addressnum   | string | null: false |
-| building     | string |             |
-| phonenum     | string | null: false |
+| postalcode   | integer | null: false |
+| prefectures  | integer | null: false |
+| municipality | string  | null: false |
+| addressnum   | string  | null: false |
+| building     | string  |             |
+| phonenum     | string  | null: false |
 
 ### Association
 
