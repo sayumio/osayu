@@ -31,7 +31,6 @@ Things you may want to cover:
 | Column  | Type       | Options                        |
 | ------  | ---------- | ------------------------------ |
 | user    | references | null: false, foreign_key: true |
-| photo   | text       | null: false |
 | name    | string     | null: false |
 | comment | text       | null: false |
 | category| boolean    | null: false |
