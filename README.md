@@ -45,7 +45,6 @@ Things you may want to cover:
 | area    | integer    | null: false |
 | days    | integer    | null: false |
 | price   | integer    | null: false |
-| content | text       |             |
 
 ### Association
 
