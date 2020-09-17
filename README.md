@@ -55,7 +55,7 @@ Things you may want to cover:
 
 | Column       | Type       | Options                        |
 | -------      | ---------- | ------------------------------ |
-| postalcode   | integer | null: false |
+| postalcode   | string  | null: false |
 | prefectures  | integer | null: false |
 | municipality | string  | null: false |
 | addressnum   | string  | null: false |
