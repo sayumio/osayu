@@ -30,10 +30,10 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :goods
+- has_many :items
 - has_many :purchases
 
-## goods テーブル
+## items テーブル
 
 | Column  | Type       | Options     |
 | ------- | ---------- | ------------|
@@ -62,6 +62,11 @@ Things you may want to cover:
 | addressnum   | string  | null: false |
 | building     | string  |             |
 | phonenum     | string  | null: false |
+
+## user_id テーブル
+
+## item_id テーブル
+
 
 
 * Database initialization
