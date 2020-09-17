@@ -41,15 +41,15 @@ Things you may want to cover:
 
 ## goods テーブル
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| goodsname   | references | null: false |
-| goodscomment| references | null: false |
-| goodsStatus | references | null: false |
-| area        | references | null: false |
-| days        | references | null: false |
-| price       | references | null: false |
-| content     | string     |             |
+| Column  | Type       | Options     |
+| ------- | ---------- | ------------|
+| name    | references | null: false |
+| comment | references | null: false |
+| status  | references | null: false |
+| area    | references | null: false |
+| days    | references | null: false |
+| price   | references | null: false |
+| content | string     |             |
 
 ## Purchase テーブル
 
