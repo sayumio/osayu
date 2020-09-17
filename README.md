@@ -56,9 +56,6 @@ Things you may want to cover:
 
 | Column       | Type       | Options                        |
 | -------      | ---------- | ------------------------------ |
-| cardnum      | string | null: false |
-| carddate     | date   | null: false |
-| securitycode | date   | null: false |
 | Postalcode   | string | null: false unique: true|
 | address      | string | null: false unique: true|
 | address      | string | null: false unique: true|
