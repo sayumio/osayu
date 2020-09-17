@@ -39,9 +39,9 @@ Things you may want to cover:
 | ------- | ---------- | ------------|
 | name    | string     | null: false |
 | comment | text       | null: false |
-| category| boolean    | null: false |
-| status  | boolean    | null: false |
-| charges | boolean    | null: false |
+| category| integer    | null: false |
+| status  | integer    | null: false |
+| charges | integer    | null: false |
 | area    | integer    | null: false |
 | days    | integer    | null: false |
 | price   | string     | null: false |
