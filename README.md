@@ -60,7 +60,7 @@ Things you may want to cover:
 | prefectures  | string | null: false |
 | municipality | string | null: false |
 | addressnum   | string | null: false |
-| building     | string | null: false |
+| building     | string |             |
 | phonenum     | string | null: false |
 
 
