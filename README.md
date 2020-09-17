@@ -35,8 +35,8 @@ Things you may want to cover:
 | name   | string     | null: false |
 | comment| text       | null: false |
 | status | boolean    | null: false |
-| area   | string     | null: false |
-| days   | string     | null: false |
+| area   | integer    | null: false |
+| days   | integer    | null: false |
 | price  | string     | null: false |
 
 ## goods テーブル
@@ -46,8 +46,8 @@ Things you may want to cover:
 | name    | references | null: false |
 | comment | references | null: false |
 | status  | references | null: false |
-| area    | references | null: false |
-| days    | references | null: false |
+| area    | integer    | null: false |
+| days    | integer    | null: false |
 | price   | references | null: false |
 | content | text       |             |
 
