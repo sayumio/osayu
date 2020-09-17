@@ -44,7 +44,7 @@ Things you may want to cover:
 | charges | integer    | null: false |
 | area    | integer    | null: false |
 | days    | integer    | null: false |
-| price   | string     | null: false |
+| price   | integer    | null: false |
 | content | text       |             |
 
 ### Association
