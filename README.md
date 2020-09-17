@@ -28,16 +28,16 @@ Things you may want to cover:
 
 ## goods_users テーブル
 
-| Column      | Type       | Options                        |
-| ------      | ---------- | ------------------------------ |
-| user        | references | null: false, foreign_key: true |
-| photo       | text       | null: false |
-| goodsname   | string     | null: false |
-| goodscomment| string     | null: false |
-| goodsStatus | boolean    | null: false |
-| area        | string     | null: false |
-| days        | string     | null: false |
-| price       | string     | null: false |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| photo  | text       | null: false |
+| name   | string     | null: false |
+| comment| text       | null: false |
+| status | boolean    | null: false |
+| area   | string     | null: false |
+| days   | string     | null: false |
+| price  | string     | null: false |
 
 ## goods テーブル
 
@@ -49,7 +49,7 @@ Things you may want to cover:
 | area    | references | null: false |
 | days    | references | null: false |
 | price   | references | null: false |
-| content | string     |             |
+| content | text       |             |
 
 ## Purchase テーブル
 
