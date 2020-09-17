@@ -48,8 +48,8 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :users
-- has_one :purchases
+- belongs_to :user
+- has_one :purchase
 
 ## purchases テーブル
 
@@ -72,9 +72,9 @@ Things you may want to cover:
 
 ### Association
 
-- has_one :users
-- has_one :purchases
-- has_one :items
+- has_one :user
+- has_one :purchase
+- has_one :item
 
 
 * Database initialization
