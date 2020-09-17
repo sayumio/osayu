@@ -72,9 +72,9 @@ Things you may want to cover:
 
 ### Association
 
-- has_one :user
+- belongs_to :user
 - has_one :purchase
-- has_one :item
+- belongs_to :item
 
 
 * Database initialization
