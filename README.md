@@ -63,10 +63,6 @@ Things you may want to cover:
 | building     | string  |             |
 | phonenum     | string  | null: false |
 
-### Association
-
-- has_many :users
-- has_many :goods
 
 * Database initialization
 
