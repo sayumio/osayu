@@ -56,7 +56,7 @@ Things you may want to cover:
 
 | Column       | Type       | Options                        |
 | -------      | ---------- | ------------------------------ |
-| Postalcode   | string | null: false unique: true|
+| postalcode   | string | null: false unique: true|
 | address      | string | null: false unique: true|
 | address      | string | null: false unique: true|
 | addressnum   | string | null: false unique: true|
