@@ -26,11 +26,10 @@ Things you may want to cover:
 | kananame | string | null: false |
 | birthday |  date  | null: false |
 
-## goods_users テーブル
+## goods テーブル
 
-| Column  | Type       | Options                        |
-| ------  | ---------- | ------------------------------ |
-| user    | references | null: false, foreign_key: true |
+| Column  | Type       | Options     |
+| ------- | ---------- | ------------|
 | name    | string     | null: false |
 | comment | text       | null: false |
 | category| boolean    | null: false |
@@ -39,19 +38,6 @@ Things you may want to cover:
 | area    | integer    | null: false |
 | days    | integer    | null: false |
 | price   | string     | null: false |
-
-## goods テーブル
-
-| Column  | Type       | Options     |
-| ------- | ---------- | ------------|
-| name    | references | null: false |
-| comment | references | null: false |
-| category| boolean    | null: false |
-| status  | references | null: false |
-| charges | boolean    | null: false |
-| area    | integer    | null: false |
-| days    | integer    | null: false |
-| price   | references | null: false |
 | content | text       |             |
 
 ## Purchase テーブル
