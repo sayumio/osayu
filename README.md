@@ -43,7 +43,6 @@ Things you may want to cover:
 
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
-| photo       | references | null: false |
 | goodsname   | references | null: false |
 | goodscomment| references | null: false |
 | goodsStatus | references | null: false |
