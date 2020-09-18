@@ -55,12 +55,12 @@ Things you may want to cover:
 
 | Column          | Type       | Options                        |
 | -------         | ---------- | ------------------------------ |
-| postalcode      | string  | null: false |
-| prefectures_id  | integer | null: false |
-| municipality    | string  | null: false |
-| addressnum      | string  | null: false |
-| building        | string  |             |
-| phonenum        | string  | null: false |
+| postalcode      | string  | null: false foreign_key: true|
+| prefectures_id  | integer | null: false foreign_key: true|
+| municipality    | string  | null: false foreign_key: true|
+| addressnum      | string  | null: false foreign_key: true|
+| building        | string  | foreign_key: true|
+| phonenum        | string  | null: false foreign_key: true|
 
 ### Association
 
