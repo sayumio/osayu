@@ -39,11 +39,11 @@ Things you may want to cover:
 | -------    | ---------- | ------------|
 | name       | string     | null: false |
 | comment    | text       | null: false |
-| category_id| integer    | null: false foreign_key: true|
-| status_id  | integer    | null: false foreign_key: true|
-| charges_id | integer    | null: false foreign_key: true|
-| area_id    | integer    | null: false foreign_key: true|
-| days-id    | integer    | null: false foreign_key: true|
+| category_id| integer    | null: false |
+| status_id  | integer    | null: false |
+| charges_id | integer    | null: false |
+| area_id    | integer    | null: false |
+| days_id    | integer    | null: false |
 | price      | integer    | null: false |
 
 ### Association
