@@ -35,16 +35,16 @@ Things you may want to cover:
 
 ## items テーブル
 
-| Column  | Type       | Options     |
-| ------- | ---------- | ------------|
-| name    | string     | null: false |
-| comment | text       | null: false |
-| category| integer    | null: false |
-| status  | integer    | null: false |
-| charges | integer    | null: false |
-| area    | integer    | null: false |
-| days    | integer    | null: false |
-| price   | integer    | null: false |
+| Column     | Type       | Options     |
+| -------    | ---------- | ------------|
+| name       | string     | null: false |
+| comment    | text       | null: false |
+| category_id| integer    | null: false |
+| status_id  | integer    | null: false |
+| charges_id | integer    | null: false |
+| area_id    | integer    | null: false |
+| days-id    | integer    | null: false |
+| price      | integer    | null: false |
 
 ### Association
 
