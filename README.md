@@ -62,6 +62,10 @@ Things you may want to cover:
 | building     | string  |             |
 | phonenum     | string  | null: false |
 
+### Association
+
+- has_one :management
+
 
 ## managements テーブル
 
