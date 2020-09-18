@@ -53,14 +53,14 @@ Things you may want to cover:
 
 ## purchases テーブル
 
-| Column       | Type       | Options                        |
-| -------      | ---------- | ------------------------------ |
-| postalcode   | string  | null: false |
-| prefectures  | integer | null: false |
-| municipality | string  | null: false |
-| addressnum   | string  | null: false |
-| building     | string  |             |
-| phonenum     | string  | null: false |
+| Column          | Type       | Options                        |
+| -------         | ---------- | ------------------------------ |
+| postalcode      | string  | null: false |
+| prefectures_id  | integer | null: false |
+| municipality    | string  | null: false |
+| addressnum      | string  | null: false |
+| building        | string  |             |
+| phonenum        | string  | null: false |
 
 ### Association
 
