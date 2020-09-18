@@ -71,7 +71,7 @@ Things you may want to cover:
 
 | Column   | Type       | Options     |
 | -------  | ---------- | ----------- |
-| users_id | integer    | null: false unique: true foreign_key: true|
+| user_id | integer    | null: false unique: true foreign_key: true|
 | item_id  | integer    | null: false unique: true foreign_key: true|
 
 ### Association
