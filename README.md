@@ -31,7 +31,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
-- has_many :managements
+- has_one :management
 
 ## items テーブル
 
