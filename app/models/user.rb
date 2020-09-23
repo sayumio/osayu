@@ -13,3 +13,4 @@ class User < ApplicationRecord
         validates :kanamei, format: { with: /\A[ァ-ヶー－]+\z/}
         validates :birthday
    end
+end
