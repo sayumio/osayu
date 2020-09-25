@@ -6,5 +6,5 @@ class User < ApplicationRecord
   has_many :items
   has_many :managements
 
-  validates :name, presence: true
+  validates :nickname,:sei, :mei, :kanasei, :kanamei, :birthday, presence: true
 end
