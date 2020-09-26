@@ -1,6 +1,4 @@
 class ItemsController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
-
   def index
     @items = Item.all
   end
@@ -10,17 +8,11 @@ class ItemsController < ApplicationController
   end
 
   def create
+    Item.create(item_params)
   end
 
-  def destroy
-  end
-
-  def show
-  end
-
-  def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+  private
+  def item_params
+    params.require(:item).permit(:name, :comment, :category_id, :status_id, :charges_id, :area_id, :dats_id, :price, :user_id)
   end
 end
