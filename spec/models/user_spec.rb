@@ -23,70 +23,70 @@ RSpec.describe User, type: :model do
         user = FactoryBot.build(:user)
         user.nickname = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Nickname can't be blank")
+        expect(user.errors.full_messages).to include("ニックネームを入力してください")
       end
 
       it "emailが空では登録できない" do
         user = FactoryBot.build(:user)
         user.email = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Email can't be blank")
+        expect(user.errors.full_messages).to include("Eメールを入力してください")
       end
 
       it "パスワードが空では登録できない" do
         user = FactoryBot.build(:user)
         user.password = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Password can't be blank")
+        expect(user.errors.full_messages).to include("パスワードを入力してください")
       end
 
       it "パスワードの確認が空では登録できない" do
         user = FactoryBot.build(:user)
         user.password_confirmation = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Password_Confirmation can't be blank")
+        expect(user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません")
       end
 
       it "パスワードの確認がパスワードと違うと登録できない" do
         user = FactoryBot.build(:user)
         user.password_confirmation = "abcd0000"
         user.valid?
-        expect(user.errors.full_messages).to include("Password_Confirmation can't be blank")
+        expect(user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません")
       end
 
       it "seiが空では登録できない"do
         user = FactoryBot.build(:user)
         user.sei = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Sei can't be blank")
+        expect(user.errors.full_messages).to include("姓を入力してください")
       end
 
       it "meiが空では登録できない"do
         user = FactoryBot.build(:user)
         user.mei = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Mei can't be blank")
+        expect(user.errors.full_messages).to include("名を入力してください")
       end
 
       it "kanaseiが空では登録できない"do
         user = FactoryBot.build(:user)
         user.kanasei = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Kanasei can't be blank")
+        expect(user.errors.full_messages).to include("姓（カナ）を入力してください")
       end
 
       it "kanameiが空では登録できない"do
         user = FactoryBot.build(:user)
         user.kanamei = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Kanamei can't be blank")
+        expect(user.errors.full_messages).to include("名（カナ）を入力してください")
       end
 
       it "bitrhdayが空では登録できない"do
         user = FactoryBot.build(:user)
         user.birthday = ""
         user.valid?
-        expect(user.errors.full_messages).to include("Birthday can't be blank")
+        expect(user.errors.full_messages).to include("生年月日を入力してください")
       end
 
       it "メールアドレスに＠がないと登録できない"do

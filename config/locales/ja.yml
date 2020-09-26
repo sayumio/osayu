@@ -3,7 +3,6 @@ ja:
    attributes:
      user:
        nickname: ニックネーム
-       email: email
        sei: 姓
        mei: 名
        kanasei: 姓（カナ）
