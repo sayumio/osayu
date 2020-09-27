@@ -6,4 +6,8 @@ class Item < ApplicationRecord
 
   validates :category_id, :status_id, :charges_id, :area_id, :days_id, numericality: { other_than: 1 }
 
+  belongs_to :user
+  has_one :purchase
+  has_one_attached :image
+
 end
