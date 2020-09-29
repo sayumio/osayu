@@ -126,7 +126,7 @@
     <%= link_to '新規投稿商品', "/items/new", class: "subtitle" %>
     <ul class='item-lists'>
 
-    <% if @items.present? %>
+
       <% @items.each do |item| %>
       <li class='list'>
         <%= link_to item_path(item.id) do %>
@@ -156,7 +156,6 @@
       <% end %>
 
       <%# 商品がない場合のダミー %>
-      <% else %>
       <%# 商品がある場合は表示されないようにしましょう %>
       <li class='list'>
         <%= link_to '#' do %>
@@ -177,7 +176,6 @@
       </li>
       <%# //商品がある場合は表示されないようにしましょう %>
       <%# /商品がない場合のダミー %>
-      <% end %>
     </ul>
   </div>
   <%# /商品一覧 %>

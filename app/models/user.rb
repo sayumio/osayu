@@ -4,7 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :items
-  has_many :managements
+  has_many :buyers
+  has_many :addresses
 
   validates :nickname, :sei, :mei, :kanasei, :kanamei, :birthday, presence: true
 end
