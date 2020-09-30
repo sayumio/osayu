@@ -31,7 +31,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
-- has_many :managements
+- has_many :buyers
 
 ## items テーブル
 
@@ -45,43 +45,43 @@ Things you may want to cover:
 | area_id    | integer    | null: false |
 | days_id    | integer    | null: false |
 | price      | integer    | null: false |
-| user_id    | integer    | null: false, foreign_key: true|
+| user       | integer    | null: false, foreign_key: true|
 
 ### Association
 
 - belongs_to :user
-- has_one :purchase
+- has_one :address
+- has_one :buyer
 
-## purchases テーブル
+## addresses テーブル
 
 | Column          | Type       | Options                        |
 | -------         | ---------- | ------------------------------ |
-| postalcode      | string  | null: false |
+| post_code       | string  | null: false |
 | prefectures_id  | integer | null: false |
-| municipality    | string  | null: false |
-| addressnum      | string  | null: false |
+| city            | string  | null: false |
+| block           | string  | null: false |
 | building        | string  |             |
-| phonenum        | string  | null: false |
-| management_id | integer | null: false, foreign_key: true|
+| phone_num       | string  | null: false |
+| buyer           | integer   | null: false, foreign_key: true|
 
 ### Association
 
-- belongs_to :management
+- belongs_to :buyer
 
 
-## managements テーブル
+## buyer テーブル
 
 | Column   | Type       | Options     |
 | -------  | ---------- | ----------- |
-| user_id | integer    | null: false unique: true foreign_key: true|
-| item_id  | integer    | null: false unique: true foreign_key: true|
+| user     | references | null: false unique: true, foreign_key: true|
+| item     | references | null: false unique: true, foreign_key: true|
 
 ### Association
 
 - belongs_to :user
-- has_one :purchase
+- has_one :address
 - belongs_to :item
-
 
 * Database initialization
 
