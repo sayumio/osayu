@@ -10,6 +10,11 @@ RSpec.describe BuyerAddress, type: :model do
       expect(@buyer_address).to be_valid
     end
 
+    it 'buildingが空でも購入できる' do
+      @buyer_address.building = ""
+      expect(@buyer_address).to be_valid
+    end
+
     it '郵便番号がなければ購入できない' do
       @buyer_address.post_code = nil
       @buyer_address.valid?

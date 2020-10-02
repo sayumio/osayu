@@ -13,7 +13,7 @@ class BuyerAddress
   end
 
   def save
-    buyer = Buyer.create( user_id: user_id)
+    buyer = Buyer.create(item_id: item_id, user_id: user_id)
     Address.create(post_code: post_code, prefectures_id: prefectures_id, city: city,
                    block: block, building: building, phone_num: phone_num, buyer_id: buyer.id)
   end
